@@ -4,4 +4,4 @@
 Project Phaser is a game inspired by the American classic "The Oregon Trail" and developed using the Javascript framework Phaser.
 
 How to Play!
--Don't die
+-Don't die!
