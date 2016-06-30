@@ -8,8 +8,6 @@ app.get('/', function(err, res) {
 	if (err) {
 		console.log('error')
 	}
-	console.log('Root', __dirname);
-	console.log('hello?');
 	res.sendFile(path.join(__dirname + '/index.html'))
 	}
 );
