@@ -2,14 +2,15 @@ var express = require('express');
 var path = require('path');
 
 var app = express();
-
-app.use(express.static('/Users/calebanderson/Desktop/OregonFail'));
+app.use(express.static(__dirname));
 
 app.get('/', function(err, res) {
 	if (err) {
 		console.log('error')
 	}
-	res.sendFile('/Users/calebanderson/Desktop/OregonFail/index.html')
+	console.log('Root', __dirname);
+	console.log('hello?');
+	res.sendFile(path.join(__dirname + '/index.html'))
 	}
 );
 
